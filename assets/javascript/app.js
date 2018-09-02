@@ -63,7 +63,7 @@ var questions = [
         isCorrect: false
       }
     ],
-    image: "laugh.jpg"
+    image: "laugh.png"
   },
   {
     question: "In California you can't legally buy a mousetrap without _________?",
@@ -184,6 +184,7 @@ $(document).ready(function () {
     secondsInterval = setInterval(countDown, 1000);
     seconds = 30;
     $seconds.text(seconds);
+    $seconds.removeClass('red');
     $timeRemaining.show();
   }
 
@@ -207,9 +208,14 @@ $(document).ready(function () {
     //  Display the number of seconds remaining
     $seconds.text(seconds);
 
+    // At 10 seconds, make the text red
+    if (seconds === 10) {
+      $seconds.addClass('red');
+    }
+
     //  Once number hits zero...
     if (seconds === 0) {
-      endQuestion('You ran out of time!');
+      endQuestion('Out of time!');
       totalUnanswered++;
     }
   }

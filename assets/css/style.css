@@ -17,6 +17,11 @@ body {
   font-weight: 700;
 }
 
+.red {
+  color: red;
+  font-weight: 700;
+}
+
 #image {
   height: 200px;
 }
