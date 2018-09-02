@@ -1,0 +1,42 @@
+body {
+  background: #055499;
+}
+
+.main-content {
+  background: #ddd;
+  padding: 40px;
+  height: 500px;
+}
+
+#message {
+  font-size: 20px;
+}
+
+.green {
+  color: green;
+  font-weight: 700;
+}
+
+#image {
+  height: 200px;
+}
+
+#answer-list {
+  list-style-type: none;
+}
+
+#answer-list li {
+  padding: 5px 10px;
+  margin: 0 auto 5px;
+  background: #fff;
+  border: 2px solid #055499;
+  border-radius: 3px;
+  width: 60%;
+  cursor: pointer;
+}
+
+#answer-list li:hover {
+  background: #239EE1;
+  border-color: #239EE1;
+  color: #fff;
+}
