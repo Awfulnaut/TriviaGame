@@ -244,7 +244,6 @@ $(document).ready(function () {
       if (currentQuestionObj.answers[i].isCorrect) {        
         $correctAnswer.html("The correct answer was: <span class=\"green\">" + currentQuestionObj.answers[i].text + "</span>");
         var image = "assets/images/" + currentQuestionObj.image;
-        console.log(image);
         $image.attr("src", image);
         $image.show();
       }
